@@ -1,0 +1,120 @@
+# Set mod key
+set $mod Mod4
+
+# Set window title font
+font pango:Consolas 10
+
+# Align window title
+title_align center
+
+# Disable window borders
+for_window [class="^.*"] border pixel 0
+
+# Other window rules
+for_window [title="Library"] floating enable
+
+# Define gaps between windows
+gaps inner 30
+
+# Drag floating windows (Mouse + $mod)
+floating_modifier $mod
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Open applications
+bindsym $mod+Return exec termite
+bindsym $mod+Print exec scrot -q 100 "/home/enindu/Pictures/Screenshots/%Y-%m-%d-%s-screenshot.png"
+bindsym $mod+d exec rofi -show run -theme solarized_custom -font "Consolas 10"
+
+# Change window focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split window in horizontal
+bindsym $mod+h split h
+
+# Split window in vertical
+bindsym $mod+v split v
+
+# Enter fullscreen mode for the focused window
+bindsym $mod+f fullscreen toggle
+
+# Change window layout (Stacked, tabbed or toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Toggle between tiling and floating
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between tiling and floating windows
+bindsym $mod+space focus mode_toggle
+
+# Focus the parent container
+bindsym $mod+a focus parent
+
+# Focus the child container
+#bindsym $mod+d focus child
+
+# Set names for workspaces
+set $ws1 "Main"
+set $ws2 "Terminal"
+set $ws3 "Web"
+set $ws4 "Program"
+set $ws5 "Other"
+
+# Switch to workspaces
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+
+# Restart i3 session inplace
+bindsym $mod+Shift+r restart
+
+# Resize window
+mode "resize" {
+	bindsym Left resize shrink width 10 px or 10 ppt
+	bindsym Down resize grow height 10 px or 10 ppt
+	bindsym Up resize shrink height 10 px or 10 ppt
+	bindsym Right resize grow width 10 px or 10 ppt
+
+	# Reset window size to normal
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+r mode "default"
+}
+
+# Enter resize mode
+bindsym $mod+r mode "resize"
+
+# Customize colors
+client.focused          #268bd2 #268bd2 #fdf6e3
+client.focused_inactive #073642 #073642 #fdf6e3
+client.unfocused        #073642 #073642 #fdf6e3
+client.urgent           #dc322f #dc322f #fdf6e3
+
+# Run commands on startup
+exec_always --no-startup-id bash ~/.config/polybar/launch.sh
+exec_always --no-startup-id feh --bg-fill --randomize /home/enindu/Pictures/Wallpapers/Linux
+exec_always --no-startup-id compton -b

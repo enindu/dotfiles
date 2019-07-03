@@ -1,0 +1,235 @@
+[colors]
+background = #aa073642
+foreground = #657b83
+blue = #268bd2
+cyan = #2aa198
+green = #859900
+orange = #cb4b16
+pink = #d33682
+purple = #6c71c4
+red = #dc322f
+yellow = #b58900
+black = #000
+white = #fff
+
+[bar/i3bar]
+; Size
+width = 100%
+height = 28
+
+; Offset
+;offset-x = 50%
+;offset-y = 50%
+
+; Radius
+radius = 0
+
+; Align modules fixed to middle
+fixed-center = true
+
+; Colors
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+; Usnderline
+line-size = 2
+line-color = ${colors.foreground}
+
+; Border
+border-size = 0
+border-color = ${colors.black}
+
+; Padding
+padding-left = 0
+padding-right = 0
+
+; Margin of modules
+module-margin-left = 0
+module-margin-right = 0
+
+; Font
+font-0 = Consolas:size=10
+font-1 = Font Awesome 5 Free Solid:size=11
+font-2 = Font Awesome 5 Brands Regular:size=11
+
+; Modlues
+modules-left = i3
+modules-center =
+modules-right = network-speed network-ip filesystem cpu battery temperature pulseaudio date
+
+; Cursor actions
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/i3]
+type = internal/i3
+
+; Mouse click
+enable-click = true
+
+; Mouse scroll
+enable-scroll = false
+
+; Sort
+index-sort = true
+
+; Display icons
+fuzzy-match = true
+
+; Icons
+ws-icon-0 = Main;
+ws-icon-1 = Terminal;
+ws-icon-2 = Web;
+ws-icon-3 = Program;
+ws-icon-4 = Other;
+ws-icon-default = 
+
+; Focused label
+label-focused = %icon% %name%
+label-focused-foreground = ${colors.blue}
+label-focused-underline = ${colors.blue}
+label-focused-padding = 2
+
+; Unfocused labels
+label-unfocused = %icon% %name%
+label-unfocused-foreground = ${colors.blue}
+label-unfocused-padding = 2
+
+; Visible labels
+label-visible = %icon% %name%
+label-visible-foreground = ${colors.blue}
+label-visible-padding = 2
+
+; Urgent labels
+label-urgent = %icon% %name%
+label-urgent-foreground = ${colors.red}
+label-urgent-underline = ${colors.red}
+label-urgent-padding = 2
+
+[module/date]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+time = %I:%M %p
+
+; Label
+label =  %time%
+label-foreground = ${colors.green}
+label-padding = 2
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Volume label
+label-volume =  %percentage:3%%
+label-volume-foreground = ${colors.yellow}
+label-volume-padding = 2
+
+; Muted label
+label-muted =  Muted
+label-muted-foreground = ${colors.yellow}
+label-muted-padding = 2
+
+[module/temperature]
+type = internal/temperature
+
+; Label
+label =  %temperature:2%
+label-foreground = ${colors.orange}
+label-padding = 2
+
+; Warning label
+label-warn =  %temperature%
+label-warn-foreground = ${colors.orange}
+label-warn-padding = 2
+
+[module/battery]
+type = internal/battery
+
+; Full battery level
+full-at = 96
+
+; Battery and adapter
+battery = BAT0
+adapter = AC0
+
+; Charging label
+label-charging =  %percentage:3%%
+label-charging-foreground = ${colors.red}
+label-charging-padding = 2
+
+; Discharging label
+label-discharging =  %percentage:3%%
+label-discharging-foreground = ${colors.red}
+label-discharging-padding = 2
+
+; Full label
+label-full =  100%
+label-full-foreground = ${colors.red}
+label-full-padding = 2
+
+[module/cpu]
+type = internal/cpu
+
+; Label
+label =  %percentage:2%%
+label-foreground = ${colors.red}
+label-padding = 2
+
+[module/filesystem]
+type = internal/fs
+
+; Mount points
+mount-0 = /
+
+; Mounted label
+label-mounted =  %used:6%/%total%
+label-mounted-foreground = ${colors.red}
+label-mounted-padding = 2
+
+[module/network-ip]
+type = internal/network
+
+; Interface
+interface = enp2s0
+
+; Connected label
+label-connected =  %local_ip%
+label-connected-foreground = ${colors.orange}
+label-connected-padding = 2
+
+; Disconnected label
+label-disconnected =  Not Connected
+label-disconnected-foreground = ${colors.orange}
+label-disconnected-padding = 2
+
+[module/network-speed]
+type = internal/network
+
+; Interface
+interface = enp2s0
+
+; Connected label
+label-connected =  %upspeed:8%  %downspeed:8%
+label-connected-foreground = ${colors.yellow}
+label-connected-padding = 2
+
+; Disconnected label
+label-disconnected =  Not Connected
+label-disconnected-foreground = ${colors.yellow}
+label-disconnected-padding = 2
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 10
+margin-bottom = 10
