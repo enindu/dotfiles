@@ -87,23 +87,21 @@ ws-icon-default = 
 ; Focused label
 label-focused = %icon% %name%
 label-focused-foreground = ${colors.blue}
-label-focused-underline = ${colors.blue}
 label-focused-padding = 2
 
 ; Unfocused labels
 label-unfocused = %icon% %name%
-label-unfocused-foreground = ${colors.blue}
+label-unfocused-foreground = ${colors.foreground}
 label-unfocused-padding = 2
 
 ; Visible labels
 label-visible = %icon% %name%
-label-visible-foreground = ${colors.blue}
+label-visible-foreground = ${colors.foreground}
 label-visible-padding = 2
 
 ; Urgent labels
 label-urgent = %icon% %name%
 label-urgent-foreground = ${colors.red}
-label-urgent-underline = ${colors.red}
 label-urgent-padding = 2
 
 [module/date]
@@ -117,7 +115,7 @@ time = %I:%M %p
 
 ; Label
 label =  %time%
-label-foreground = ${colors.green}
+label-foreground = ${colors.foreground}
 label-padding = 2
 
 [module/pulseaudio]
@@ -125,12 +123,12 @@ type = internal/pulseaudio
 
 ; Volume label
 label-volume =  %percentage:3%%
-label-volume-foreground = ${colors.yellow}
+label-volume-foreground = ${colors.foreground}
 label-volume-padding = 2
 
 ; Muted label
 label-muted =  Muted
-label-muted-foreground = ${colors.yellow}
+label-muted-foreground = ${colors.red}
 label-muted-padding = 2
 
 [module/temperature]
@@ -138,12 +136,12 @@ type = internal/temperature
 
 ; Label
 label =  %temperature:2%
-label-foreground = ${colors.orange}
+label-foreground = ${colors.foreground}
 label-padding = 2
 
 ; Warning label
 label-warn =  %temperature%
-label-warn-foreground = ${colors.orange}
+label-warn-foreground = ${colors.red}
 label-warn-padding = 2
 
 [module/battery]
@@ -158,7 +156,7 @@ adapter = AC0
 
 ; Charging label
 label-charging =  %percentage:3%%
-label-charging-foreground = ${colors.red}
+label-charging-foreground = ${colors.foreground}
 label-charging-padding = 2
 
 ; Discharging label
@@ -168,7 +166,7 @@ label-discharging-padding = 2
 
 ; Full label
 label-full =  100%
-label-full-foreground = ${colors.red}
+label-full-foreground = ${colors.foreground}
 label-full-padding = 2
 
 [module/cpu]
@@ -176,7 +174,7 @@ type = internal/cpu
 
 ; Label
 label =  %percentage:2%%
-label-foreground = ${colors.red}
+label-foreground = ${colors.foreground}
 label-padding = 2
 
 [module/filesystem]
@@ -187,7 +185,7 @@ mount-0 = /
 
 ; Mounted label
 label-mounted =  %used:6%/%total%
-label-mounted-foreground = ${colors.red}
+label-mounted-foreground = ${colors.foreground}
 label-mounted-padding = 2
 
 [module/network-ip]
@@ -198,12 +196,12 @@ interface = enp2s0
 
 ; Connected label
 label-connected =  %local_ip%
-label-connected-foreground = ${colors.orange}
+label-connected-foreground = ${colors.foreground}
 label-connected-padding = 2
 
 ; Disconnected label
 label-disconnected =  Not Connected
-label-disconnected-foreground = ${colors.orange}
+label-disconnected-foreground = ${colors.red}
 label-disconnected-padding = 2
 
 [module/network-speed]
@@ -214,12 +212,12 @@ interface = enp2s0
 
 ; Connected label
 label-connected =  %upspeed:8%  %downspeed:8%
-label-connected-foreground = ${colors.yellow}
+label-connected-foreground = ${colors.foreground}
 label-connected-padding = 2
 
 ; Disconnected label
 label-disconnected =  Not Connected
-label-disconnected-foreground = ${colors.yellow}
+label-disconnected-foreground = ${colors.red}
 label-disconnected-padding = 2
 
 [settings]
