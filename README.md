@@ -1,9 +1,10 @@
 # Dotfiles
 My personal configuration files
 
-## Arch Linux
-![Arch Linux](https://github.com/enindu/dotfiles/raw/master/misc/screenshots/arch-linux.png "Arch Linux")
+## Solarized
+![Solarized](https://github.com/enindu/dotfiles/raw/master/misc/screenshots/solarized.png "Solarized")
 
+- Operating system: [Arch Linux](https://www.archlinux.org)
 - Window manager: [i3-gaps](https://github.com/Airblader/i3)
 - GTK theme: [Numix Solarized Dark Blue](https://github.com/Ferdi265/numix-solarized-gtk-theme)
 - Icon theme: [ePapirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
@@ -13,10 +14,4 @@ My personal configuration files
 - Applications: [Compton](https://github.com/chjj/compton), [neofetch](https://github.com/dylanaraps/neofetch), [Polybar](https://github.com/polybar/polybar), [Rofi](https://github.com/davatorium/rofi) and [Termite](https://github.com/thestinger/termite)
 
 ## Termux
-![Termux](https://github.com/enindu/dotfiles/raw/master/misc/screenshots/termux.jpg "Termux")
-
-- Theme: Dracula
-- Font: [Iosevka](https://github.com/be5invis/Iosevka)
-- Applications: [neofetch](https://github.com/dylanaraps/neofetch)
-
-> **Note:** All credits must go to its original authors
+You can also find Termux configuration files on Android, under `termux` directory.
