@@ -1,0 +1,97 @@
+[options]
+allow_bold = true
+#audible_bell = false
+bold_is_bright = true
+#cell_height_scale = 1.0
+#cell_width_scale = 1.0
+clickable_url = true
+#dynamic_title = true
+font = Fira Code 10
+#fullscreen = true
+#icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+hyperlinks = true
+browser = xdg-open
+cursor_blink = system
+cursor_shape = block
+#filter_unmatched_urls = true
+#modify_other_keys = false
+#size_hints = false
+scrollbar = off
+
+[colors]
+foreground        = #eeeeee
+foreground_bold   = #eeeeee
+cursor            = #16a085
+cursor_foreground = #eeeeee
+background        = rgba(34, 43, 46, 0.8)
+
+# Black
+color0  = #4f4f4f
+
+# Black dark
+color18 = #282828
+
+# White
+color15 = #e4e4e4
+
+# Grey
+color8  = #8e8e8e
+
+# Grey light
+color20 = #8e8e8e
+
+# Gray lighter
+color21 = #d5d5d5
+
+# Grey lightest
+color7  = #ffffff
+
+# Red
+color1  = #e25252
+color9  = #e25252
+
+# Green
+color2  = #87b158
+color10 = #87b158
+
+# Yellow
+color3  = #e2b322
+color11 = #e2b322
+
+# Blue
+color4  = #5294e2
+color12 = #5294e2
+
+# Purple
+color5  = #7e57c2
+color13 = #7e57c2
+
+# Teal
+color6  = #16a085
+color14 = #16a085
+
+# Orange
+color16 = #eb6637
+
+# Cyan
+color17 = #00bcd4
+
+# Blue Grey
+color19 = #607d8b
+
+[hints]
+#font = Consolas 11
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0

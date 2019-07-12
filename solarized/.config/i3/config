@@ -7,10 +7,8 @@ font pango:Consolas 10
 # Align window title
 title_align center
 
-# Disable window borders
+# Window rules
 for_window [class="^.*"] border pixel 0
-
-# Other window rules
 for_window [title="Library"] floating enable
 
 # Define gaps between windows

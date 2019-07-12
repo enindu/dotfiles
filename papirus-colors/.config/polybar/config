@@ -1,0 +1,365 @@
+[colors]
+background = #222b2e
+foreground = #eeeeee
+red        = #e25252
+blue       = #5294e2
+teal       = #16a085
+green      = #87b158
+purple     = #7e57c2
+orange     = #ee923a
+indigo     = #5c6bc0
+black      = #4f4f4f
+white      = #e4e4e4
+yellow     = #e2b322
+brown      = #ae8e6c
+
+[bar/top]
+; Size
+width  = 100%
+height = 30
+
+; Offset
+;offset-x = 50%
+;offset-y = 50%
+
+; Position
+bottom = false
+
+; Radius
+radius = 0
+
+; Align modules fixed to middle
+fixed-center = true
+
+; Colors
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+; Underline
+line-size  = 2
+line-color = ${colors.foreground}
+
+; Border
+border-size  = 0
+border-color = ${colors.black}
+
+; Padding
+padding-left  = 0
+padding-right = 0
+
+; Margin of modules
+module-margin-left  = 0
+module-margin-right = 0
+
+; Font
+font-0 = Fira Code:style=Bold:size=10;3
+font-1 = Font Awesome 5 Free Solid:size=12;3
+
+; Modlues
+modules-left   = thunar termite firefox vscode gimp
+modules-center = date weather
+modules-right  = battery temperature pulseaudio
+
+; Cursor actions
+cursor-click  = pointer
+cursor-scroll = ns-resize
+
+[bar/bottom]
+; Size
+width  = 100%
+height = 30
+
+; Offset
+;offset-x = 50%
+;offset-y = 50%
+
+; Position
+bottom = true
+
+; Radius
+radius = 0
+
+; Align modules fixed to middle
+fixed-center = true
+
+; Colors
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+; Underline
+line-size  = 2
+line-color = ${colors.foreground}
+
+; Border
+border-size  = 0
+border-color = ${colors.black}
+
+; Padding
+padding-left  = 0
+padding-right = 0
+
+; Margin of modules
+module-margin-left  = 0
+module-margin-right = 0
+
+; Font
+font-0 = Fira Code:style=Bold:size=10;3
+font-1 = Font Awesome 5 Free Solid:size=12;3
+
+; Modlues
+modules-left   = i3
+modules-center =
+modules-right  = lock logout reboot poweroff
+
+; Cursor actions
+cursor-click  = pointer
+cursor-scroll = ns-resize
+
+[module/i3]
+type = internal/i3
+
+; Mouse click
+enable-click = true
+
+; Mouse scroll
+enable-scroll = false
+
+; Sort
+index-sort = true
+
+; Display icons
+fuzzy-match = true
+
+; Icons
+ws-icon-0       = Main;
+ws-icon-1       = Terminal;
+ws-icon-2       = Web;
+ws-icon-3       = Program;
+ws-icon-4       = Other;
+ws-icon-default = 
+
+; Focused label
+label-focused            = %icon%
+label-focused-background = ${colors.teal}
+label-focused-foreground = ${colors.foreground}
+label-focused-padding    = 2
+
+; Unfocused labels
+label-unfocused            = %icon%
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-padding    = 2
+
+; Visible labels
+label-visible            = %icon%
+label-visible-foreground = ${colors.foreground}
+label-visible-padding    = 2
+
+; Urgent labels
+label-urgent            = %icon%
+label-urgent-foreground = ${colors.red}
+label-urgent-padding    = 2
+
+[module/weather]
+type = custom/script
+
+; Script
+exec = /home/enindu/.config/polybar/scripts/weather.sh
+
+; Update interval
+interval = 600
+
+; Label
+label            = %output%
+label-foreground = ${colors.foreground}
+label-padding    = 1
+
+[module/battery]
+type = internal/battery
+
+; Full battery level
+full-at = 96
+
+; Battery and adapter
+battery = BAT0
+adapter = AC0
+
+; Charging label
+label-charging            =  %percentage%%
+label-charging-background = ${colors.teal}
+label-charging-foreground = ${colors.foreground}
+label-charging-padding    = 2
+
+; Discharging label
+label-discharging            =  %percentage%%
+label-discharging-background = ${colors.red}
+label-discharging-foreground = ${colors.foreground}
+label-discharging-padding    = 2
+
+; Full label
+label-full            =  100%
+label-full-background = ${colors.teal}
+label-full-foreground = ${colors.foreground}
+label-full-padding    = 2
+
+[module/temperature]
+type = internal/temperature
+
+; Label
+label            =  %temperature%
+label-background = ${colors.orange}
+label-foreground = ${colors.foreground}
+label-padding    = 2
+
+; Warning label
+label-warn            =  %temperature%
+label-warn-background = ${colors.red}
+label-warn-foreground = ${colors.foreground}
+label-warn-padding    = 2
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Volume label
+label-volume            =  %percentage%%
+label-volume-background = ${colors.blue}
+label-volume-foreground = ${colors.foreground}
+label-volume-padding    = 2
+
+; Muted label
+label-muted            =  Muted
+label-muted-background = ${colors.red}
+label-muted-foreground = ${colors.foreground}
+label-muted-padding    = 2
+
+[module/date]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+time = %I:%M %p
+
+; Label
+label            =  %time%
+label-foreground = ${colors.foreground}
+label-padding    = 1
+
+[module/lock]
+type = custom/text
+
+; Label
+content = 
+content-background = ${colors.teal}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = slock
+
+[module/logout]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.purple}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = i3-msg exit
+
+[module/reboot]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.blue}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = reboot
+
+[module/poweroff]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.red}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = poweroff
+
+[module/firefox]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.orange}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = firefox &
+
+[module/vscode]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.purple}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = code &
+
+[module/gimp]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.brown}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = gimp &
+
+[module/termite]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.teal}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = termite &
+
+[module/thunar]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.red}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = Thunar&
+
+[settings]
+screenchange-reload     = true
+;compositing-background = xor
+;compositing-foreground = source
+;compositing-border     = over
+;pseudo-transparency    = false
+
+[global/wm]
+margin-top    = 10
+margin-bottom = 10
