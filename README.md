@@ -19,7 +19,7 @@ My personal configuration files
 - Operating system: [Arch Linux](https://www.archlinux.org)
 - Window manager: [i3-gaps](https://github.com/Airblader/i3)
 - GTK theme: [Matcha Dark Sea](https://github.com/vinceliuice/matcha)
-- Icon theme: [ePapirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- Icon theme: [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - Cursor theme: [Human](https://launchpad.net/human-cursors-theme)
 - Fonts: [Fira Code](https://github.com/tonsky/FiraCode), [Fira Sans](https://github.com/mozilla/Fira) and [Font Awesome](https://fontawesome.com)
 - Wallpaper: Self made (You can be found at `misc/wallpapers` directory)
