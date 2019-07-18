@@ -1,0 +1,253 @@
+[colors]
+background = #282828
+foreground = #ebdbb2
+red        = #fb4934
+green      = #b8bb26
+yellow     = #fabd2f
+blue       = #83a598
+purple     = #d3869b
+teal       = #8ec07c
+orange     = #fe8019
+gray       = #a89984
+
+[bar/top]
+; Size
+width  = 100%
+height = 30
+
+; Offset
+;offset-x = 50%
+;offset-y = 50%
+
+; Position
+bottom = false
+
+; Radius
+radius = 0
+
+; Align modules fixed to middle
+fixed-center = true
+
+; Colors
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+; Underline
+line-size  = 2
+line-color = ${colors.foreground}
+
+; Border
+border-size  = 0
+border-color = ${colors.background}
+
+; Padding
+padding-left  = 0
+padding-right = 0
+
+; Margin of modules
+module-margin-left  = 0
+module-margin-right = 0
+
+; Font
+font-0 = Fira Code:size=9;2
+font-1 = Font Awesome 5 Free Solid:size=10;2
+
+; Modlues
+modules-left   = i3
+modules-center = weather time date
+modules-right  = battery temperature pulseaudio lock logout poweroff
+
+; Cursor actions
+cursor-click  = pointer
+cursor-scroll = ns-resize
+
+[module/i3]
+type = internal/i3
+
+; Mouse click
+enable-click = true
+
+; Mouse scroll
+enable-scroll = false
+
+; Sort
+index-sort = true
+
+; Display icons
+fuzzy-match = true
+
+; Icons
+ws-icon-0       = Main;
+ws-icon-1       = Terminal;
+ws-icon-2       = Web;
+ws-icon-3       = Program;
+ws-icon-4       = Design;
+ws-icon-default = 
+
+; Focused label
+label-focused            = %icon% %name%
+label-focused-background = ${colors.green}
+label-focused-foreground = ${colors.foreground}
+label-focused-padding    = 2
+
+; Unfocused labels
+label-unfocused            = %icon% %name%
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-padding    = 2
+
+; Visible labels
+label-visible            = %icon% %name%
+label-visible-foreground = ${colors.foreground}
+label-visible-padding    = 2
+
+; Urgent labels
+label-urgent            = %icon% %name%
+label-urgent-foreground = ${colors.red}
+label-urgent-padding    = 2
+
+[module/weather]
+type = custom/script
+
+; Script
+exec = /home/enindu/.config/polybar/scripts/weather.sh
+
+; Update interval
+interval = 600
+
+; Label
+label            = %output%
+label-foreground = ${colors.foreground}
+label-padding    = 1
+
+[module/time]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+time = %I:%M%P
+
+; Label
+label            =  %time%
+label-foreground = ${colors.foreground}
+label-padding    = 1
+
+[module/date]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+date = %A, %d %B
+
+; Label
+label            =  %date%
+label-foreground = ${colors.foreground}
+label-padding    = 1
+
+[module/battery]
+type = internal/battery
+
+; Full battery level
+full-at = 96
+
+; Battery and adapter
+battery = BAT0
+adapter = AC0
+
+; Charging label
+label-charging            =  %percentage%%
+label-charging-background = ${colors.teal}
+label-charging-foreground = ${colors.foreground}
+label-charging-padding    = 2
+
+; Discharging label
+label-discharging            =  %percentage%%
+label-discharging-background = ${colors.red}
+label-discharging-foreground = ${colors.foreground}
+label-discharging-padding    = 2
+
+; Full label
+label-full            =  100%
+label-full-background = ${colors.teal}
+label-full-foreground = ${colors.foreground}
+label-full-padding    = 2
+
+[module/temperature]
+type = internal/temperature
+
+; Label
+label            =  %temperature%
+label-background = ${colors.purple}
+label-foreground = ${colors.foreground}
+label-padding    = 2
+
+; Warning label
+label-warn            =  %temperature%
+label-warn-background = ${colors.red}
+label-warn-foreground = ${colors.foreground}
+label-warn-padding    = 2
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Volume label
+label-volume            =  %percentage%%
+label-volume-background = ${colors.blue}
+label-volume-foreground = ${colors.foreground}
+label-volume-padding    = 2
+
+; Muted label
+label-muted            =  Muted
+label-muted-background = ${colors.red}
+label-muted-foreground = ${colors.foreground}
+label-muted-padding    = 2
+
+[module/lock]
+type = custom/text
+
+; Label
+content = 
+content-background = ${colors.yellow}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = slock
+
+[module/logout]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.green}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = i3-msg exit
+
+[module/poweroff]
+type = custom/text
+
+; Label
+content            = 
+content-background = ${colors.red}
+content-foreground = ${colors.foreground}
+content-padding    = 2
+
+; Mouse click
+click-left = poweroff
+
+[settings]
+screenchange-reload     = true
+;compositing-background = xor
+;compositing-foreground = source
+;compositing-border     = over
+;pseudo-transparency    = false
+
+[global/wm]
+margin-top    = 10
+margin-bottom = 10

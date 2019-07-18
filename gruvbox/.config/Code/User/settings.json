@@ -1,0 +1,49 @@
+{
+    "editor.fontFamily": "'monospace'",
+    "editor.fontSize": 12,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderControlCharacters": false,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "Force no italic",
+                "scope": [
+                    "comment",
+                    "comment.block",
+                    "comment.block.documentation",
+                    "comment.line",
+                    "comment.line.double-slash",
+                    "punctuation.definition.comment",
+                    "variable.parameter"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.renderIndentGuides": "always",
+    "terminal.integrated.fontFamily": "'monospace'",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.rendererType": "dom",
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "breadcrumbs.enabled": false,
+    "markdown.preview.fontFamily": "'monospace'",
+    "markdown.preview.fontSize": 12,
+    "files.associations": {
+        "*.html": "html",
+        "*.twig": "html"
+    }
+}

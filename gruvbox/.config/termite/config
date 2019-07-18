@@ -1,0 +1,98 @@
+[options]
+allow_bold = true
+#audible_bell = false
+bold_is_bright = false
+#cell_height_scale = 1.0
+#cell_width_scale = 1.0
+clickable_url = true
+#dynamic_title = true
+font = Fira Code 9
+#fullscreen = true
+#icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+hyperlinks = true
+browser = xdg-open
+cursor_blink = system
+cursor_shape = block
+#filter_unmatched_urls = true
+#modify_other_keys = false
+#size_hints = false
+scrollbar = off
+
+[colors]
+foreground        = #ebdbb2
+foreground_bold   = #ebdbb2
+cursor            = #b8bb26
+cursor_foreground = #ebdbb2
+background        = #282828
+
+# Black
+color0  = #3c3836
+
+# Black dark
+color18 = #282828
+
+# White
+color15 = #ebdbb2
+
+# Grey
+color8  = #928374
+
+# Grey light
+color20 = #a89984
+
+# Gray lighter
+color21 = #a89984
+
+# Grey lightest
+color7  = #bdae93
+
+# Red
+color1  = #cc241d
+color9  = #fb4934
+
+# Green
+color2  = #98971a
+color10 = #b8bb26
+
+# Yellow
+color3  = #d79921
+color11 = #fabd2f
+
+# Blue
+color4  = #458588
+color12 = #83a598
+
+# Purple
+color5  = #b16286
+color13 = #d3869b
+
+# Teal
+color6  = #689d6a
+color14 = #8ec07c
+
+# Orange
+color16 = #d65d0e
+
+# Cyan
+color17 = #689d6a
+
+# Blue Grey
+color19 = #83a598
+
+[hints]
+#font = Fira Code 9
+#foreground = #ebdbb2
+#background = #282828
+#active_foreground = #ebdbb2
+#active_background = #282828
+#padding = 2
+#border = #282828
+#border = #282828
+#border_width = 0.5
+#roundness = 2.0
