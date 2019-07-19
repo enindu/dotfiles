@@ -35,7 +35,7 @@ My personal configuration files
 - Cursor theme: [Human](https://launchpad.net/human-cursors-theme)
 - Fonts: [Fira Code](https://github.com/tonsky/FiraCode), [Fira Sans](https://github.com/mozilla/Fira) and [Font Awesome](https://fontawesome.com)
 - Wallpaper: Self made (Can be found at `misc/wallpapers` directory)
-- Riced applications: [Compton](https://github.com/chjj/compton), [neofetch](https://github.com/dylanaraps/neofetch), [Polybar](https://github.com/polybar/polybar), [Rofi](https://github.com/davatorium/rofi), [Termite](https://github.com/thestinger/termite), [nano](https://www.nano-editor.org), [VS Code](https://code.visualstudio.com), [Geany](https://www.geany.org), [Ranger](https://github.com/ranger/ranger) and [Vim](https://www.vim.org)
+- Riced applications: [Compton](https://github.com/chjj/compton), [neofetch](https://github.com/dylanaraps/neofetch), [Polybar](https://github.com/polybar/polybar), [Rofi](https://github.com/davatorium/rofi), [Termite](https://github.com/thestinger/termite), [nano](https://www.nano-editor.org), [VS Code](https://code.visualstudio.com), [Geany](https://www.geany.org), [Ranger](https://github.com/ranger/ranger), [Vim](https://www.vim.org) and [Tmux](https://github.com/tmux/tmux)
 
 ## Termux
 You can also find Termux configuration files on Android, under `termux` directory.
