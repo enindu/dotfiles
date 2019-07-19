@@ -30,7 +30,7 @@ My personal configuration files
 
 - Operating system: [Arch Linux](https://www.archlinux.org)
 - Window manager: [i3-gaps](https://github.com/Airblader/i3)
-- GTK themes: Base 16 Gruvbox Dark (Couldn't find any repository. Found on [https://github.com/afraidofmusic/dwmrice](https://github.com/afraidofmusic/dwmrice).) and Oomox Gruvbox (Custom made GTK theme with Oomox that based on Arc. Can be found at `.themes` directory.)
+- GTK themes: Base 16 Gruvbox Dark (Couldn't find any repository. Found on [https://github.com/afraidofmusic/dwmrice](https://github.com/afraidofmusic/dwmrice).), Oomox Gruvbox (Custom made GTK theme with Oomox that based on Arc. Can be found at `.themes` directory.) and Oomox Gruvbox Materia (Custom made GTK theme with Oomox that based on Materia. Can be found at `.themes` directory.)
 - Icon themes: [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) and Oomox Gruvbox (Custom made icon theme with Oomox that based on Papirus. Can be found at `.icons` directory.)
 - Cursor theme: [Human](https://launchpad.net/human-cursors-theme)
 - Fonts: [Fira Code](https://github.com/tonsky/FiraCode), [Fira Sans](https://github.com/mozilla/Fira) and [Font Awesome](https://fontawesome.com)
