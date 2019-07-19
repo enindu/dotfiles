@@ -10,7 +10,7 @@ class Default(ColorScheme):
 
 		elif context.in_browser:
 			fg = 223
-			
+
 			if context.selected:
 				attr = reverse
 
