@@ -2,7 +2,10 @@
 # ~/.bashrc
 #
 
-[[ $- != *i* ]] && return
+if [[ $DISPLAY ]]; then
+	[[ $- != *i* ]] && return
+	[[ -z "$TMUX" ]] && exec tmux
+fi
 
 # Bash colors
 NORMAL=$(echo -e "\001\033[00m\002")
