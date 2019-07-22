@@ -49,7 +49,7 @@ module-margin-left  = 0
 module-margin-right = 0
 
 ; Font
-font-0 = Fira Code:size=9;2
+font-0 = Iosevka:size=9;2
 font-1 = Font Awesome 5 Free Solid:size=10;2
 
 ; Modlues

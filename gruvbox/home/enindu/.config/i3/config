@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # Set window title font
-font pango:Fira Code 9
+font pango:Iosevka 9
 
 # Align window title
 title_align center
@@ -23,7 +23,7 @@ bindsym $mod+Shift+q kill
 # Open applications
 bindsym $mod+Return exec termite
 bindsym $mod+Print exec scrot -q 100 "/home/enindu/Pictures/Screenshots/%Y-%m-%d-%s-screenshot.png"
-bindsym $mod+d exec rofi -show run -theme gruvbox_custom -font "Fira Code 9"
+bindsym $mod+d exec rofi -show run -theme gruvbox_custom -font "Iosevka 9"
 
 # Change window focus
 bindsym $mod+Left focus left
