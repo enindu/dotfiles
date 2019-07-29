@@ -1,0 +1,219 @@
+[colors]
+background = #282a36
+foreground = #f8f8f2
+red        = #ff5555
+green      = #50fa7b
+yellow     = #f1fa8c
+blue       = #6272a4
+purple     = #bd93f9
+cyan       = #8be9fd
+orange     = #ff5555
+pink       = #ff79c6
+
+[bar/top]
+; Size
+width  = 100%
+height = 30
+
+; Offset
+;offset-x = 50%
+;offset-y = 50%
+
+; Position
+bottom = false
+
+; Radius
+radius = 0
+
+; Align modules fixed to middle
+fixed-center = true
+
+; Colors
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+; Underline
+line-size  = 2
+line-color = ${colors.foreground}
+
+; Border
+border-size  = 0
+border-color = ${colors.background}
+
+; Padding
+padding-left  = 0
+padding-right = 0
+
+; Margin of modules
+module-margin-left  = 0
+module-margin-right = 0
+
+; Font
+font-0 = Roboto:size=10;3
+font-1 = Font Awesome 5 Pro:style=Regular:size=12;3
+
+; Modlues
+modules-left   = i3
+modules-center = weather time date
+modules-right  = audio network lock logout poweroff
+
+; Cursor actions
+cursor-click  = pointer
+cursor-scroll = ns-resize
+
+[module/i3]
+type = internal/i3
+
+; Pin workspaces
+pin-workspaces = true
+
+; Mouse click
+enable-click = true
+
+; Mouse scroll
+enable-scroll = false
+
+; Sort
+index-sort = false
+
+; Display icons
+fuzzy-match = true
+
+; Icons
+ws-icon-0       = Main;
+ws-icon-1       = Terminal;
+ws-icon-2       = Web;
+ws-icon-3       = Program;
+ws-icon-4       = Design;
+ws-icon-5       = Media;
+ws-icon-default = 
+
+; Focused label
+label-focused            = %icon%
+label-focused-foreground = ${colors.pink}
+label-focused-padding    = 2
+
+; Unfocused labels
+label-unfocused         = %icon%
+label-unfocused-padding = 2
+
+; Visible labels
+label-visible         = %icon%
+label-visible-padding = 2
+
+; Urgent labels
+label-urgent            = %icon%
+label-urgent-foreground = ${colors.red}
+label-urgent-padding    = 2
+
+[module/weather]
+type = custom/script
+
+; Script
+exec = /home/enindu/.config/polybar/scripts/weather.sh
+
+; Update interval
+interval = 600
+
+; Label
+label         = %output%
+label-padding = 4
+
+[module/time]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+time = %I:%M%P
+
+; Label
+label         =   %time%
+label-padding = 4
+
+[module/date]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+date = %A, %d %B
+
+; Label
+label         =   %date%
+label-padding = 4
+
+[module/audio]
+type = internal/pulseaudio
+
+; Volume label
+label-volume            = 
+label-volume-foreground = ${colors.cyan}
+label-volume-padding    = 2
+
+; Muted label
+label-muted            = 
+label-muted-foreground = ${colors.red}
+label-muted-padding    = 2
+
+[module/network]
+type = internal/network
+
+; Interface
+interface = enp2s0
+
+; Connected label
+label-connected            = 
+label-connected-foreground = ${colors.pink}
+label-connected-padding    = 2
+
+; Disconnected label
+label-disconnected            = 
+label-disconnected-foreground = ${colors.red}
+label-disconnected-padding    = 2
+
+[module/lock]
+type = custom/text
+
+; Label
+content            = 
+content-foreground = ${colors.green}
+content-padding    = 2
+
+; Mouse click
+click-left = i3lock-fancy -f Roboto-Regular -t ""
+
+[module/logout]
+type = custom/text
+
+; Label
+content            = 
+content-foreground = ${colors.yellow}
+content-padding    = 2
+
+; Mouse click
+click-left = i3-msg exit
+
+[module/poweroff]
+type = custom/text
+
+; Label
+content            = 
+content-foreground = ${colors.red}
+content-padding    = 2
+
+; Mouse click
+click-left = poweroff
+
+[settings]
+screenchange-reload     = true
+;compositing-background = xor
+;compositing-foreground = source
+;compositing-border     = over
+;pseudo-transparency    = false
+
+[global/wm]
+margin-top    = 10
+margin-bottom = 10

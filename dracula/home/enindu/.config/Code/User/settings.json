@@ -1,0 +1,50 @@
+{
+  "editor.fontFamily": "'Consolas'",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderControlCharacters": false,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Force no italic",
+        "scope": [
+          "entity.name.type",
+          "storage.type.php",
+          "variable.language",
+          "variable.language punctuation.definition.variable.php",
+          "support",
+          "entity.other.inherited-class"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "vs-minimal",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.sideBar.location": "left",
+  "terminal.integrated.fontFamily": "'Consolas'",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.rendererType": "dom",
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 0,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "breadcrumbs.enabled": false,
+  "markdown.preview.fontFamily": "'Consolas'",
+  "markdown.preview.fontSize": 13,
+  "files.associations": {
+    "*.html": "html",
+    "*.twig": "html"
+  }
+}

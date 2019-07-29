@@ -1,0 +1,84 @@
+[options]
+allow_bold             = false
+#audible_bell          = false
+bold_is_bright         = false
+#cell_height_scale     = 1.0
+#cell_width_scale      = 1.0
+clickable_url          = true
+#dynamic_title         = true
+font                   = Consolas 10
+#fullscreen            = true
+#icon_name             = terminal
+#mouse_autohide        = false
+#scroll_on_output      = false
+#scroll_on_keystroke   = true
+scrollback_lines       = 10000
+#search_wrap           = true
+#urgent_on_bell        = true
+hyperlinks             = true
+browser                = xdg-open
+cursor_blink           = system
+cursor_shape           = block
+#filter_unmatched_urls = true
+#modify_other_keys     = false
+#size_hints            = false
+scrollbar              = off
+
+[colors]
+background        = #282a36
+foreground        = #f8f8f2
+foreground_bold   = #f8f8f2
+cursor            = #f8f8f2
+cursor_foreground = #282a36
+
+# Black
+color0 = #44475a
+color8 = #44475a
+
+# Red
+color1 = #ff5555
+color9 = #ff6e67
+
+# Green
+color2  = #50fa7b
+color10 = #5af78e
+
+# Yellow
+color3  = #f1fa8c
+color11 = #f4f99d
+
+# Blue
+color4  = #bd93f9
+color12 = #caa9fa
+
+# Magenta
+color5  = #ff79c6
+color13 = #ff92d0
+
+# Cyan
+color6  = #8be9fd
+color14 = #9aedfe
+
+# White
+color7  = #f8f8f2
+color15 = #f8f8f2
+
+# Other
+color59  = #44475a
+color214 = #ffb86c
+color235 = #282a36
+color236 = #44475a
+color237 = #44475a
+color238 = #44475a
+color242 = #323443
+
+[hints]
+#font              = Consolas 10
+#background        = #282a36
+#foreground        = #f8f8f2
+#active_background = #44475a
+#active_foreground = #f8f8f2
+#padding           = 4
+#border            = #282a36
+#border_width      = 0.5
+#roundness         = 2.0

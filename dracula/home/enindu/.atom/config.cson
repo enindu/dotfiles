@@ -1,0 +1,41 @@
+"*":
+  "autoclose-html":
+    forceInline: [
+      "title"
+      "h1"
+      "h2"
+      "h3"
+      "h4"
+      "h5"
+      "h6"
+      "p"
+      "li"
+    ]
+  core:
+    autoHideMenuBar: true
+    automaticallyUpdate: false
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "spell-check"
+    ]
+    projectHome: "/srv/http/"
+    telemetryConsent: "no"
+    themes: [
+      "dracula-ui"
+      "atom-dracula-syntax"
+    ]
+  editor:
+    fontFamily: "Consolas"
+    fontSize: 13
+    showIndentGuide: true
+  "exception-reporting":
+    userId: ""
+  "linter-ui-default":
+    showPanel: true
+  "spell-check": {}
+  welcome:
+    showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "

@@ -37,5 +37,17 @@ My personal configuration files
 - Wallpaper: Self made (Can be found at `misc/wallpapers` directory)
 - Riced applications: [Compton](https://github.com/chjj/compton), [neofetch](https://github.com/dylanaraps/neofetch), [Polybar](https://github.com/polybar/polybar), [Rofi](https://github.com/davatorium/rofi), [Termite](https://github.com/thestinger/termite), [nano](https://www.nano-editor.org), [VS Code](https://code.visualstudio.com), [Geany](https://www.geany.org), [Ranger](https://github.com/ranger/ranger), [Vim](https://www.vim.org) and [Tmux](https://github.com/tmux/tmux)
 
+## Dracula
+![Dracula](https://github.com/enindu/dotfiles/raw/master/misc/screenshots/dracula.png "Dracula")
+
+- Operating system: [Arch Linux](https://www.archlinux.org)
+- Window manager: [i3-gaps](https://github.com/Airblader/i3)
+- GTK theme: [Ant Dracula](https://github.com/EliverLara/Ant-Dracula)
+- Icon theme: [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- Cursor theme: [Human](https://launchpad.net/human-cursors-theme)
+- Fonts: [Roboto](https://fonts.google.com/specimen/Roboto), [Consolas](https://docs.microsoft.com/en-gb/typography/font-list/consolas) and [Font Awesome Pro](https://fontawesome.com)
+- Wallpaper: Self made (Can be found at `misc/wallpapers` directory)
+- Riced applications: [Atom](https://atom.io), [CAVA](https://github.com/karlstav/cava), [cmus](https://cmus.github.io), [VS Code](https://code.visualstudio.com), [Compton](https://github.com/chjj/compton), [Geany](https://www.geany.org), [htop](https://hisham.hm/htop), [nano](https://www.nano-editor.org), [neofetch](https://github.com/dylanaraps/neofetch), [Polybar](https://github.com/polybar/polybar), [Ranger](https://github.com/ranger/ranger), [Rofi](https://github.com/davatorium/rofi), [Termite](https://github.com/thestinger/termite), [Tmux](https://github.com/tmux/tmux), [Vim](https://www.vim.org) and [i3lock](https://i3wm.org/i3lock)
+
 ## Termux
 You can also find Termux configuration files on Android, under `termux` directory.
