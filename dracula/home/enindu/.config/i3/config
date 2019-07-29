@@ -116,5 +116,5 @@ client.placeholder      #282a36 #282a36 #f8f8f2 #282a36 #282a36
 
 # Run commands on startup
 exec_always --no-startup-id bash /home/enindu/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-fill /home/enindu/Pictures/Wallpapers/Linux/Picture\ 15.png
+exec_always --no-startup-id feh --bg-fill /home/enindu/Pictures/Wallpapers/Linux/Picture\ 14.png
 exec_always --no-startup-id compton -b
