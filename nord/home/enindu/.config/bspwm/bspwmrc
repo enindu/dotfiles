@@ -1,0 +1,57 @@
+#!/bin/sh
+
+# =========
+# Autostart
+# =========
+# Start key bindings
+sxhkd &
+
+# Start compositor
+compton --experimental-backends &
+
+# Start polkit agent
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Start mouse
+xsetroot -cursor_name left_ptr &
+
+# Set wallpaper
+feh --bg-fill /home/enindu/Pictures/Wallpapers/Picture\ 1.jpg &
+
+# Start status bar
+bash /home/enindu/.config/polybar/launch.sh &
+
+# ==========
+# Workspaces
+# ==========
+bspc monitor -d Main Program Web Design Media
+
+# =====
+# Tiled
+# =====
+# Border width
+bspc config border_width 0
+
+# Gap between windows
+bspc config window_gap  15
+
+# Windows split ratio
+bspc config split_ratio 0.5
+
+# =======
+# Monocle
+# =======
+# Borders
+bspc config borderless_monocle false
+
+# Gap
+bspc config gapless_monocle false
+
+# ============
+# Window Rules
+# ============
+bspc rule -a code-oss  desktop="^2"
+bspc rule -a firefox   desktop="^3"
+bspc rule -a Chromium  desktop="^3"
+bspc rule -a Darktable desktop="^4"
+bspc rule -a Gimp      desktop="^4"

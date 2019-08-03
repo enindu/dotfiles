@@ -1,0 +1,252 @@
+; ======
+; Colors
+; ======
+[colors]
+background = #AA2E3440
+foreground = #D8DEE9
+black      = #4C566A
+red        = #BF616A
+green      = #A3BE8C
+yellow     = #EBCB8B
+blue       = #5E81AC
+magenta    = #B48EAD
+cyan       = #8FBCBB
+white      = #D8DEE9
+orange     = #D08770
+
+; =======
+; Top Bar
+; =======
+[bar/top]
+; Size
+width  = 100%
+height = 25
+
+; Offset
+;offset-x = 50%
+;offset-y = 50%
+
+; Position
+bottom = false
+
+; Radius
+radius = 0
+
+; Align modules fixed to middle
+fixed-center = true
+
+; Colors
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+; Underline
+line-size  = 4
+line-color = ${colors.white}
+
+; Border
+border-size  = 0
+
+; Padding
+padding-left  = 0
+padding-right = 0
+
+; Margin of modules
+module-margin-left  = 0
+module-margin-right = 0
+
+; Font
+font-0 = Consolas:size=10;3
+
+; Modlues
+modules-left   = bspwm
+modules-center = time date
+modules-right  = audio network lock logout poweroff
+
+; Cursor actions
+cursor-click  = pointer
+cursor-scroll = ns-resize
+
+; Separator
+separator = " "
+
+; ============
+; bspwm Module
+; ============
+[module/bspwm]
+type = internal/bspwm
+
+; Mouse click
+enable-click = false
+
+; Mouse scroll
+enable-scroll  = false
+reverse-scroll = false
+
+; Separator
+label-separator = " "
+
+; Dimmed label
+label-dimmed         = %name%
+label-dimmed-padding = 1
+
+; Focused label
+label-focused            = %name%
+label-focused-foreground = ${colors.black}
+label-focused-background = ${colors.blue}
+label-focused-padding    = 1
+
+; Occupied label
+label-occupied            = %name%
+label-occupied-foreground = ${colors.black}
+label-occupied-background = ${colors.cyan}
+label-occupied-underline  = ${colors.blue}
+label-occupied-padding    = 1
+
+; Empty labels
+label-empty            = %name%
+label-empty-foreground = ${colors.black}
+label-empty-background = ${colors.cyan}
+label-empty-padding    = 1
+
+; Urgent labels
+label-urgent            = %name%
+label-urgent-foreground = ${colors.black}
+label-urgent-background = ${colors.red}
+label-urgent-padding    = 1
+
+; ===========
+; Time Module
+; ===========
+[module/time]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+time = %I:%M%P
+
+; Label
+label            = %time%
+label-foreground = ${colors.black}
+label-background = ${colors.cyan}
+label-padding    = 1
+
+; ===========
+; Date Module
+; ===========
+[module/date]
+type = internal/date
+
+; Update interval
+interval = 1.0
+
+; Format
+date = %A, %d %B
+
+; Label
+label            = %date%
+label-foreground = ${colors.black}
+label-background = ${colors.cyan}
+label-padding    = 1
+
+; ============
+; Audio Module
+; ============
+[module/audio]
+type = internal/pulseaudio
+
+; Volume label
+label-volume            = Volume: %percentage%%
+label-volume-foreground = ${colors.black}
+label-volume-background = ${colors.cyan}
+label-volume-padding    = 1
+
+; Muted label
+label-muted            = Muted
+label-muted-foreground = ${colors.black}
+label-muted-background = ${colors.red}
+label-muted-padding    = 1
+
+; ==============
+; Network Module
+; ==============
+[module/network]
+type = internal/network
+
+; Interface
+interface = enp2s0
+
+; Connected label
+label-connected            = Download: %downspeed%
+label-connected-foreground = ${colors.black}
+label-connected-background = ${colors.cyan}
+label-connected-padding    = 1
+
+; Disconnected label
+label-disconnected            = Disconnected
+label-disconnected-foreground = ${colors.black}
+label-disconnected-background = ${colors.red}
+label-disconnected-padding    = 1
+
+; ===========
+; Lock Module
+; ===========
+[module/lock]
+type = custom/text
+
+; Label
+content            = Lock
+content-foreground = ${colors.black}
+content-background = ${colors.blue}
+content-padding    = 1
+
+; Mouse click
+click-left = slock
+
+; =============
+; Logout Module
+; =============
+[module/logout]
+type = custom/text
+
+; Label
+content            = Logout
+content-foreground = ${colors.black}
+content-background = ${colors.blue}
+content-padding    = 1
+
+; Mouse click
+click-left = bspc quit
+
+; ===============
+; Poweroff Module
+; ===============
+[module/poweroff]
+type = custom/text
+
+; Label
+content            = Poweroff
+content-foreground = ${colors.black}
+content-background = ${colors.blue}
+content-padding    = 1
+
+; Mouse click
+click-left = poweroff
+
+; =====
+; Other
+; =====
+[settings]
+screenchange-reload     = true
+;compositing-background = xor
+;compositing-foreground = source
+;compositing-border     = over
+pseudo-transparency     = true
+
+; ==
+; WM
+; ==
+[global/wm]
+margin-top    = 0
+margin-bottom = 0

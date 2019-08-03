@@ -49,5 +49,17 @@ My personal configuration files
 - Wallpaper: Self made (Can be found at `misc/wallpapers` directory)
 - Riced applications: [Atom](https://atom.io), [CAVA](https://github.com/karlstav/cava), [cmus](https://cmus.github.io), [VS Code](https://code.visualstudio.com), [Compton](https://github.com/chjj/compton), [Geany](https://www.geany.org), [htop](https://hisham.hm/htop), [nano](https://www.nano-editor.org), [neofetch](https://github.com/dylanaraps/neofetch), [Polybar](https://github.com/polybar/polybar), [Ranger](https://github.com/ranger/ranger), [Rofi](https://github.com/davatorium/rofi), [Termite](https://github.com/thestinger/termite), [Tmux](https://github.com/tmux/tmux), [Vim](https://www.vim.org) and [i3lock](https://i3wm.org/i3lock)
 
+## Nord
+![Nord](https://github.com/enindu/dotfiles/raw/master/misc/screenshots/nord.png "Nord")
+
+- Operating system: [Arch Linux](https://www.archlinux.org)
+- Window manager: [bspwm](https://github.com/baskerville/bspwm)
+- GTK theme: [Nordic](https://github.com/EliverLara/Nordic)
+- Icon theme: [Papirus Folders Nordic](https://github.com/basigur/papirus-folders)
+- Cursor theme: [Human](https://launchpad.net/human-cursors-theme)
+- Fonts: [Roboto](https://fonts.google.com/specimen/Roboto) and [Consolas](https://docs.microsoft.com/en-gb/typography/font-list/consolas)
+- Wallpaper: Self made (Can be found at `misc/wallpapers` directory)
+- Riced applications: [Alacritty](https://github.com/jwilm/alacritty), [CAVA](https://github.com/karlstav/cava), [cmus](https://cmus.github.io), [Compton](https://github.com/chjj/compton), [htop](https://hisham.hm/htop), [nano](https://www.nano-editor.org), [neofetch](https://github.com/dylanaraps/neofetch), [Polybar](https://github.com/polybar/polybar), [Ranger](https://github.com/ranger/ranger), [Rofi](https://github.com/davatorium/rofi) and [Vim](https://www.vim.org)
+
 ## Termux
 You can also find Termux configuration files on Android, under `termux` directory.
