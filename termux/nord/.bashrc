@@ -17,7 +17,7 @@ CYAN=$(echo -e "\001\033[01;36m\002")
 # Set command aliases
 alias diff="diff --color=auto"
 alias grep="grep -i --color=auto"
-alias ls="ls -a --color=auto"
+alias ls="ls --color=auto"
 alias neofetch="printf '\n' && neofetch --ascii_distro arch_small"
 
 # Set terminal prompt
