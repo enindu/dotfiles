@@ -50,8 +50,9 @@ bspc config gapless_monocle false
 # ============
 # Window Rules
 # ============
-bspc rule -a code-oss  desktop="^2"
-bspc rule -a firefox   desktop="^3"
-bspc rule -a Chromium  desktop="^3"
-bspc rule -a Darktable desktop="^4"
-bspc rule -a Gimp      desktop="^4"
+bspc rule -a code-oss      desktop="^2"
+bspc rule -a firefox       desktop="^3"
+bspc rule -a Chromium      desktop="^3"
+bspc rule -a "Tor Browser" desktop="^3"
+bspc rule -a Darktable     desktop="^4"
+bspc rule -a Gimp          desktop="^4"
