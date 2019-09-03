@@ -27,8 +27,8 @@ window:
 
   # Window padding
   padding:
-    x: 10
-    y: 10
+    x: 15
+    y: 15
 
   # Spread additional padding evenly around the terminal content
   dynamic_padding: false
@@ -86,7 +86,7 @@ font:
     style:  Italic
 
   # Font size
-  size: 6.5
+  size: 6.9
 
   # Font offset
   offset:
