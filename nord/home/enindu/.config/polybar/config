@@ -2,7 +2,7 @@
 ; Colors
 ; ======
 [colors]
-background = #AA2E3440
+background = #2E3440
 foreground = #D8DEE9
 black      = #4C566A
 red        = #BF616A
@@ -20,7 +20,7 @@ orange     = #D08770
 [bar/top]
 ; Size
 width  = 100%
-height = 25
+height = 24
 
 ; Offset
 ;offset-x = 50%
@@ -55,19 +55,20 @@ module-margin-left  = 0
 module-margin-right = 0
 
 ; Font
-font-0 = Consolas:size=10;3
+font-0 = Roboto:size=9;2
+font-1 = Fira Code:size=15;3
 
 ; Modlues
-modules-left   = bspwm
-modules-center = time date
-modules-right  = audio network lock logout poweroff
+modules-left   = ra5 ra3 bspwm ra1 ra3 ra4
+modules-center = la4 la3 la1 weather la3 la2 time ra2 ra3 date ra1 ra3 ra4
+modules-right  = la4 la3 la1 audio network la3 la2 lock logout poweroff la6 la5
 
 ; Cursor actions
 cursor-click  = pointer
 cursor-scroll = ns-resize
 
 ; Separator
-separator = " "
+separator =
 
 ; ============
 ; bspwm Module
@@ -83,36 +84,35 @@ enable-scroll  = false
 reverse-scroll = false
 
 ; Separator
-label-separator = " "
+label-separator =
 
 ; Dimmed label
 label-dimmed         = %name%
-label-dimmed-padding = 1
+label-dimmed-padding = 2
 
 ; Focused label
 label-focused            = %name%
-label-focused-foreground = ${colors.black}
-label-focused-background = ${colors.blue}
-label-focused-padding    = 1
+label-focused-foreground = ${colors.blue}
+label-focused-background = ${colors.cyan}
+label-focused-padding    = 2
 
 ; Occupied label
-label-occupied            = %name%
+label-occupied            = ‣ %name%
 label-occupied-foreground = ${colors.black}
 label-occupied-background = ${colors.cyan}
-label-occupied-underline  = ${colors.blue}
-label-occupied-padding    = 1
+label-occupied-padding    = 2
 
 ; Empty labels
 label-empty            = %name%
 label-empty-foreground = ${colors.black}
 label-empty-background = ${colors.cyan}
-label-empty-padding    = 1
+label-empty-padding    = 2
 
 ; Urgent labels
 label-urgent            = %name%
-label-urgent-foreground = ${colors.black}
-label-urgent-background = ${colors.red}
-label-urgent-padding    = 1
+label-urgent-foreground = ${colors.red}
+label-urgent-background = ${colors.cyan}
+label-urgent-padding    = 2
 
 ; ===========
 ; Time Module
@@ -124,13 +124,13 @@ type = internal/date
 interval = 1.0
 
 ; Format
-time = %I:%M%P
+time = %I:%M:%S %p
 
 ; Label
 label            = %time%
-label-foreground = ${colors.black}
-label-background = ${colors.cyan}
-label-padding    = 1
+label-foreground = ${colors.white}
+label-background = ${colors.blue}
+label-padding    = 2
 
 ; ===========
 ; Date Module
@@ -142,13 +142,31 @@ type = internal/date
 interval = 1.0
 
 ; Format
-date = %A, %d %B
+date = %A, %d
 
 ; Label
 label            = %date%
 label-foreground = ${colors.black}
 label-background = ${colors.cyan}
-label-padding    = 1
+label-padding    = 2
+
+; ==============
+; Weather Module
+; ==============
+[module/weather]
+type = custom/script
+
+; Script
+exec = /home/enindu/.config/polybar/scripts/weather.sh
+
+; Update interval
+interval = 600
+
+; Label
+label            = %output%
+label-foreground = ${colors.black}
+label-background = ${colors.cyan}
+label-padding    = 2
 
 ; ============
 ; Audio Module
@@ -160,13 +178,13 @@ type = internal/pulseaudio
 label-volume            = Volume: %percentage%%
 label-volume-foreground = ${colors.black}
 label-volume-background = ${colors.cyan}
-label-volume-padding    = 1
+label-volume-padding    = 2
 
 ; Muted label
 label-muted            = Muted
 label-muted-foreground = ${colors.black}
-label-muted-background = ${colors.red}
-label-muted-padding    = 1
+label-muted-background = ${colors.cyan}
+label-muted-padding    = 2
 
 ; ==============
 ; Network Module
@@ -181,13 +199,13 @@ interface = enp2s0
 label-connected            = Download: %downspeed%
 label-connected-foreground = ${colors.black}
 label-connected-background = ${colors.cyan}
-label-connected-padding    = 1
+label-connected-padding    = 2
 
 ; Disconnected label
 label-disconnected            = Disconnected
 label-disconnected-foreground = ${colors.black}
-label-disconnected-background = ${colors.red}
-label-disconnected-padding    = 1
+label-disconnected-background = ${colors.cyan}
+label-disconnected-padding    = 2
 
 ; ===========
 ; Lock Module
@@ -197,9 +215,9 @@ type = custom/text
 
 ; Label
 content            = Lock
-content-foreground = ${colors.black}
+content-foreground = ${colors.white}
 content-background = ${colors.blue}
-content-padding    = 1
+content-padding    = 2
 
 ; Mouse click
 click-left = slock
@@ -212,9 +230,9 @@ type = custom/text
 
 ; Label
 content            = Logout
-content-foreground = ${colors.black}
+content-foreground = ${colors.white}
 content-background = ${colors.blue}
-content-padding    = 1
+content-padding    = 2
 
 ; Mouse click
 click-left = bspc quit
@@ -227,12 +245,103 @@ type = custom/text
 
 ; Label
 content            = Poweroff
-content-foreground = ${colors.black}
+content-foreground = ${colors.white}
 content-background = ${colors.blue}
-content-padding    = 1
+content-padding    = 2
 
 ; Mouse click
 click-left = poweroff
+
+; ======
+; Arrows
+; ======
+[module/la1]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.cyan}
+content-background = ${colors.background}
+
+[module/la2]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.blue}
+content-background = ${colors.background}
+
+[module/la3]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.cyan}
+
+[module/la4]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.cyan}
+content-background = ${colors.background}
+
+[module/la5]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.red}
+content-background = ${colors.background}
+
+[module/la6]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.blue}
+
+[module/ra1]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.cyan}
+content-background = ${colors.background}
+
+[module/ra2]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.blue}
+content-background = ${colors.background}
+
+[module/ra3]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.cyan}
+
+[module/ra4]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.cyan}
+content-background = ${colors.background}
+
+[module/ra5]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.red}
+content-background = ${colors.background}
 
 ; =====
 ; Other

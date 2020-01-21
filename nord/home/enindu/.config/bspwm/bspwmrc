@@ -7,7 +7,7 @@
 sxhkd &
 
 # Start compositor
-compton --experimental-backends &
+picom &
 
 # Start polkit agent
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
@@ -16,7 +16,7 @@ compton --experimental-backends &
 xsetroot -cursor_name left_ptr &
 
 # Set wallpaper
-feh --bg-fill /home/enindu/Pictures/Wallpapers/Picture\ 1.jpg &
+feh --bg-fill /home/enindu/Pictures/Picture\ 9.jpg &
 
 # Start status bar
 bash /home/enindu/.config/polybar/launch.sh &
@@ -24,7 +24,7 @@ bash /home/enindu/.config/polybar/launch.sh &
 # ==========
 # Workspaces
 # ==========
-bspc monitor -d Main Program Web Design Media
+bspc monitor -d Main Code Web Graphic Media Game
 
 # =====
 # Tiled
@@ -51,8 +51,11 @@ bspc config gapless_monocle false
 # Window Rules
 # ============
 bspc rule -a code-oss      desktop="^2"
+bspc rule -a Evolution     desktop="^3"
 bspc rule -a firefox       desktop="^3"
 bspc rule -a Chromium      desktop="^3"
 bspc rule -a "Tor Browser" desktop="^3"
 bspc rule -a Darktable     desktop="^4"
-bspc rule -a "Gimp"        desktop="^4"
+bspc rule -a Gimp          desktop="^4"
+bspc rule -a gimp          desktop="^4"
+bspc rule -a Inkscape      desktop="^4"
