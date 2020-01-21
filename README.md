@@ -57,9 +57,9 @@ My personal configuration files
 - GTK theme: [Nordic](https://github.com/EliverLara/Nordic)
 - Icon theme: [Papirus Folders Nordic](https://github.com/basigur/papirus-folders)
 - Cursor theme: [Human](https://launchpad.net/human-cursors-theme)
-- Fonts: [Roboto](https://fonts.google.com/specimen/Roboto) and [Consolas](https://docs.microsoft.com/en-gb/typography/font-list/consolas)
-- Wallpaper: Self made (Can be found at `misc/wallpapers` directory)
-- Riced applications: [Alacritty](https://github.com/jwilm/alacritty), [CAVA](https://github.com/karlstav/cava), [cmus](https://cmus.github.io), [Compton](https://github.com/chjj/compton), [htop](https://hisham.hm/htop), [nano](https://www.nano-editor.org), [neofetch](https://github.com/dylanaraps/neofetch), [Polybar](https://github.com/polybar/polybar), [Ranger](https://github.com/ranger/ranger), [Rofi](https://github.com/davatorium/rofi) and [Vim](https://www.vim.org)
+- Fonts: [Roboto](https://fonts.google.com/specimen/Roboto) and [JetBrains Mono](https://www.jetbrains.com/lp/mono)
+- Wallpaper: Found on Google (Can be found at `misc/wallpapers` directory)
+- Riced applications: [CAVA](https://github.com/karlstav/cava), [cmus](https://cmus.github.io), [htop](https://hisham.hm/htop), [Kitty](https://github.com/kovidgoyal/kitty), [nano](https://www.nano-editor.org), [neofetch](https://github.com/dylanaraps/neofetch), [picom](https://github.com/yshui/picom), [Polybar](https://github.com/polybar/polybar), [Ranger](https://github.com/ranger/ranger), [Rofi](https://github.com/davatorium/rofi) and [Vim](https://www.vim.org)
 
 ## Termux
 You can also find Termux configuration files on Android, under `termux` directory.
