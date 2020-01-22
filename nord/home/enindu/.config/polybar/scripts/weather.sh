@@ -3,8 +3,8 @@
 # Original source - https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/openweathermap-detailed
 
 # Global settings
-KEY="1484ecc8401352a242d0abc88bc194f6"
-CITY="Homagama, LK"
+KEY=""
+CITY=""
 UNITS="metric"
 SYMBOL="°C"
 API="https://api.openweathermap.org/data/2.5"
