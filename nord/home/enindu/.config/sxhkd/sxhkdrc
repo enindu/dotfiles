@@ -3,15 +3,15 @@
 # ===================
 # Terminal emulator
 super + Return
-  alacritty
+  kitty
 
 # Application launcher
-super + @space
-  rofi -show run -theme nord -font "Consolas 10"
+super + space
+  rofi -show run -theme nord -font "Roboto Sans 9"
 
 # Reload sxhkd
 super + Escape
-	pkill -USR1 -x sxhkd
+  pkill -USR1 -x sxhkd
 
 # ==========
 # bspwm Keys
