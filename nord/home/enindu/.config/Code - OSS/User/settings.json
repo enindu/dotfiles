@@ -1,0 +1,46 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "breadcrumbs.enabled": false,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.fontFamily": "monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "twig": "html"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.html": "html"
+  },
+  "files.insertFinalNewline": true,
+  "go.autocompleteUnimportedPackages": true,
+  "go.useLanguageServer": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/dist/"
+    }
+  ],
+  "markdown.preview.fontFamily": "monospace",
+  "markdown.preview.fontSize": 13,
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.rendererType": "canvas",
+  "window.menuBarVisibility": "toggle",
+  "workbench.colorTheme": "Nord",
+  "workbench.iconTheme": "vs-minimal",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.tree.renderIndentGuides": "always"
+}

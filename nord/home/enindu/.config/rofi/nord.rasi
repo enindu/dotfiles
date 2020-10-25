@@ -7,12 +7,13 @@ configuration {
 }
 
 * {
-  background-color: #2E3440;
-  text-color:       #D8DEE9;
-  selbg:            #8FBCBB;
-  actbg:            #3B4252;
-  urgbg:            #BF616A;
-  winbg:            @text-color;
+  background-color:  #2E3440;
+  text-color:        #D8DEE9;
+  text-color-invert: #4C566A;
+  selbg:             #8FBCBB;
+  actbg:             #3B4252;
+  urgbg:             #BF616A;
+  winbg:             @text-color;
 
   selected-normal-foreground: @winbg;
   normal-foreground:          @text-color;
@@ -57,7 +58,7 @@ button {
 
 button selected {
   background-color: @active-background;
-  text-color:       @text-color;
+  text-color:       @text-color-invert;
 }
 
 inputbar {
@@ -72,7 +73,7 @@ listview {
 }
 
 element {
-  padding: 5px;
+  padding: 8px 5px;
 }
 
 entry {

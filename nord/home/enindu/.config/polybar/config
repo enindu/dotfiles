@@ -55,8 +55,8 @@ module-margin-left  = 0
 module-margin-right = 0
 
 ; Font
-font-0 = Roboto:size=9;2
-font-1 = Fira Code:size=15;3
+font-0 = sans:size=9;2
+font-1 = JetBrains Mono:size=15;3
 
 ; Modlues
 modules-left   = ra5 ra3 bspwm ra1 ra3 ra4
@@ -97,7 +97,7 @@ label-focused-background = ${colors.cyan}
 label-focused-padding    = 2
 
 ; Occupied label
-label-occupied            = ‣ %name%
+label-occupied            = #%name%
 label-occupied-foreground = ${colors.black}
 label-occupied-background = ${colors.cyan}
 label-occupied-padding    = 2

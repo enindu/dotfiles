@@ -12,3 +12,9 @@ export VISUAL="vim"
 
 # Set default pager
 export PAGER="most"
+
+# Set Go path
+export GOPATH="/srv/http/go"
+
+# Set executable paths
+export PATH="$PATH:/srv/http/go/bin"

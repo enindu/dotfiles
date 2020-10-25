@@ -17,4 +17,8 @@ WEATHER_MAIN=$(echo $WEATHER | jq -r ".weather[0].main")
 WEATHER_TEMP=$(echo $WEATHER | jq -r ".main.temp")
 
 # Print weather
-echo "$WEATHER_MAIN $WEATHER_TEMP$SYMBOL"
+if [[ -z $WEATHER ]]; then
+  echo "Disconnected"
+else
+  echo "$WEATHER_MAIN $WEATHER_TEMP$SYMBOL"
+fi
