@@ -57,9 +57,9 @@ My personal configuration files
 - GTK theme: [Nordic](https://github.com/EliverLara/Nordic)
 - Icon theme: [Papirus Folders Nordic](https://github.com/basigur/papirus-folders)
 - Cursor theme: [Human](https://launchpad.net/human-cursors-theme)
-- Fonts: [Roboto](https://fonts.google.com/specimen/Roboto) and [JetBrains Mono](https://www.jetbrains.com/lp/mono)
+- Fonts: [Merriweather Sans](https://fonts.google.com/specimen/Merriweather+Sans) and [JetBrains Mono](https://www.jetbrains.com/lp/mono)
 - Wallpaper: Found on Google (Can be found at `misc/wallpapers` directory)
-- Riced applications: [CAVA](https://github.com/karlstav/cava), [cmus](https://cmus.github.io), [htop](https://hisham.hm/htop), [Kitty](https://github.com/kovidgoyal/kitty), [nano](https://www.nano-editor.org), [neofetch](https://github.com/dylanaraps/neofetch), [picom](https://github.com/yshui/picom), [Polybar](https://github.com/polybar/polybar), [Ranger](https://github.com/ranger/ranger), [Rofi](https://github.com/davatorium/rofi) and [Vim](https://www.vim.org)
+- Riced applications: [CAVA](https://github.com/karlstav/cava), [cmus](https://cmus.github.io), [htop](https://hisham.hm/htop), [Kitty](https://github.com/kovidgoyal/kitty), [nano](https://www.nano-editor.org), [neofetch](https://github.com/dylanaraps/neofetch), [picom](https://github.com/yshui/picom), [Polybar](https://github.com/polybar/polybar), [Ranger](https://github.com/ranger/ranger), [Rofi](https://github.com/davatorium/rofi), [Vim](https://www.vim.org) and [VS Code](https://code.visualstudio.com)
 
 ## Termux
-You can also find Termux configuration files on Android, under `termux` directory.
+You can also find Termux configuration files on Android, under `termux` directory. I'm no longer doing Termux, by the way.
