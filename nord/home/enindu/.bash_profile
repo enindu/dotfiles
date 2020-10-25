@@ -18,3 +18,4 @@ export GOPATH="/srv/http/go"
 
 # Set executable paths
 export PATH="$PATH:/srv/http/go/bin"
+export PATH="$PATH:$HOME/.local/bin"
