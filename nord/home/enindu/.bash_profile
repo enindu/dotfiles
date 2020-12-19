@@ -10,12 +10,12 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # Set default editor
 export VISUAL="vim"
 
-# Set default pager
+# Set default viewer
 export PAGER="most"
 
-# Set Go path
-export GOPATH="/srv/http/go"
-
 # Set executable paths
-export PATH="$PATH:/srv/http/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.go/bin"
+
+# Set Go configurations
+export GOPATH="$HOME/.go"

@@ -7,7 +7,7 @@ super + Return
 
 # Application launcher
 super + space
-  rofi -show run -theme nord -font "sans 9"
+  rofi -show run -theme nord -font "sans 10"
 
 # Reload sxhkd
 super + Escape

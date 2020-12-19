@@ -2,10 +2,15 @@
   "[css]": {
     "editor.defaultFormatter": "aeschli.vscode-css-formatter"
   },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "breadcrumbs.enabled": false,
+  "debug.console.fontFamily": "monospace",
+  "debug.console.fontSize": 12,
   "editor.autoClosingBrackets": "always",
   "editor.autoClosingQuotes": "always",
   "editor.fontFamily": "monospace",
@@ -36,7 +41,7 @@
   "markdown.preview.fontSize": 12,
   "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.fontSize": 12,
-  "terminal.integrated.rendererType": "canvas",
+  "terminal.integrated.rendererType": "experimentalWebgl",
   "window.menuBarVisibility": "toggle",
   "workbench.colorTheme": "Nord",
   "workbench.iconTheme": "vs-minimal",
