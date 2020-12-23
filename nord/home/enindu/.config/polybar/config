@@ -55,7 +55,7 @@ module-margin-left  = 0
 module-margin-right = 0
 
 ; Font
-font-0 = sans:size=10;2
+font-0 = sans:size=10;3
 font-1 = JetBrains Mono:size=15;4
 
 ; Modlues
@@ -124,7 +124,7 @@ type = internal/date
 interval = 1.0
 
 ; Format
-time = %I:%M:%S %p
+time = %I:%M %p
 
 ; Label
 label            = %time%
