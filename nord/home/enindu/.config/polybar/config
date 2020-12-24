@@ -56,7 +56,7 @@ module-margin-right = 0
 
 ; Font
 font-0 = sans:size=10;3
-font-1 = JetBrains Mono:size=15;4
+font-1 = monospace:size=15;5
 
 ; Modlues
 modules-left   = ra5 ra3 bspwm ra1 ra3 ra4
