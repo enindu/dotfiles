@@ -46,22 +46,3 @@ bspc config borderless_monocle false
 
 # Gap
 bspc config gapless_monocle false
-
-# ============
-# Window Rules
-# ============
-bspc rule -a code-oss         desktop="^2"
-bspc rule -a Evolution        desktop="^3"
-bspc rule -a firefox          desktop="^3"
-bspc rule -a Chromium         desktop="^3"
-bspc rule -a telegram-desktop desktop="^3"
-bspc rule -a TelegramDesktop  desktop="^3"
-bspc rule -a "Tor Browser"    desktop="^3"
-bspc rule -a slack            desktop="^3"
-bspc rule -a Slack            desktop="^3"
-bspc rule -a filezilla        desktop="^3"
-bspc rule -a Filezilla        desktop="^3"
-bspc rule -a Darktable        desktop="^4"
-bspc rule -a Gimp             desktop="^4"
-bspc rule -a gimp             desktop="^4"
-bspc rule -a Inkscape         desktop="^4"
