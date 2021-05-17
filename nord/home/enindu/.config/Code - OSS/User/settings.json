@@ -1,11 +1,14 @@
 {
   "[css]": {
-    "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[json]": {
+  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "breadcrumbs.enabled": false,
@@ -19,6 +22,7 @@
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.tabSize": 2,
+  "editor.wordWrap": "on",
   "emmet.includeLanguages": {
     "twig": "html"
   },
@@ -29,16 +33,11 @@
   },
   "files.insertFinalNewline": true,
   "go.autocompleteUnimportedPackages": true,
-  "go.useLanguageServer": false,
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "expanded",
-      "extensionName": ".css",
-      "savePath": "/dist/"
-    }
-  ],
+  "go.toolsManagement.autoUpdate": true,
   "markdown.preview.fontFamily": "monospace",
   "markdown.preview.fontSize": 12,
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
   "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.rendererType": "experimentalWebgl",
