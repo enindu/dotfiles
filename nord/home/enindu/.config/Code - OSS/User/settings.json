@@ -11,6 +11,9 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[rust]": {
+    "editor.tabSize": 4
+  },
   "breadcrumbs.enabled": false,
   "debug.console.fontFamily": "monospace",
   "debug.console.fontSize": 12,
