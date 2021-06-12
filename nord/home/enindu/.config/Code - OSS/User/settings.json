@@ -22,6 +22,7 @@
   "editor.fontFamily": "monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
+  "editor.inlineHints.fontFamily": "monospace",
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.tabSize": 2,

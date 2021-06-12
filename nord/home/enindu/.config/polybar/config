@@ -56,7 +56,7 @@ module-margin-right = 0
 
 ; Font
 font-0 = sans:size=10;3
-font-1 = monospace:size=15;5
+font-1 = monospace:size=16;5
 
 ; Modlues
 modules-left   = ra5 ra3 bspwm ra1 ra3 ra4
