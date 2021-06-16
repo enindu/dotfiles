@@ -17,3 +17,6 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 # Set Go configurations
 export GOPATH="$HOME/.go"
+
+# Set Rust configurations
+. "$HOME/.cargo/env"

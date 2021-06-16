@@ -21,4 +21,3 @@ alias neofetch="printf '\n' && neofetch --ascii_distro arch_small"
 
 # Set terminal prompt
 PS1="${CYAN}[\w] ${BLUE}-> ${NORMAL}"
-. "$HOME/.cargo/env"
