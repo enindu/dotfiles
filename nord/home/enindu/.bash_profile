@@ -8,7 +8,7 @@
 export VISUAL="vim"
 
 # Set default viewer
-export PAGER="most"
+export PAGER="less"
 
 # Set executable paths
 export PATH="$PATH:$HOME/.local/bin"

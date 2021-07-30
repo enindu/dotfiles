@@ -1,55 +1,63 @@
 {
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[rust]": {
-    "editor.tabSize": 4
-  },
-  "breadcrumbs.enabled": false,
-  "debug.console.fontFamily": "monospace",
-  "debug.console.fontSize": 12,
-  "editor.autoClosingBrackets": "always",
-  "editor.autoClosingQuotes": "always",
-  "editor.fontFamily": "monospace",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 12,
-  "editor.inlineHints.fontFamily": "monospace",
-  "editor.minimap.enabled": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "emmet.includeLanguages": {
-    "twig": "html"
-  },
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "files.associations": {
-    "*.html": "html"
-  },
-  "files.insertFinalNewline": true,
-  "go.autocompleteUnimportedPackages": true,
-  "go.toolsManagement.autoUpdate": true,
-  "markdown.preview.fontFamily": "monospace",
-  "markdown.preview.fontSize": 12,
-  "php.suggest.basic": false,
-  "php.validate.enable": false,
-  "prettier.printWidth": 180,
-  "rust-client.rustupPath": "/home/enindu/.cargo/bin/rustup",
-  "terminal.integrated.fontFamily": "monospace",
-  "terminal.integrated.fontSize": 12,
-  "window.menuBarVisibility": "toggle",
-  "workbench.colorTheme": "Nord",
-  "workbench.iconTheme": "vs-minimal",
-  "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none",
-  "workbench.tree.renderIndentGuides": "always"
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "breadcrumbs.enabled": false,
+    "debug.console.fontFamily": "monospace",
+    "debug.console.fontSize": 12,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.fontFamily": "monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 12,
+    "editor.inlineHints.fontFamily": "monospace",
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.associations": {
+        "*.html": "html"
+    },
+    "files.insertFinalNewline": true,
+    "go.autocompleteUnimportedPackages": true,
+    "go.toolsManagement.autoUpdate": true,
+    "liveSassCompile.settings.forceBaseDirectory": "/scss",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/css",
+            "savePathSegmentKeys": null,
+            "savePathReplaceSegmentsWith": null
+        }
+    ],
+    "markdown.preview.fontFamily": "monospace",
+    "markdown.preview.fontSize": 12,
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+    "prettier.printWidth": 180,
+    "prettier.tabWidth": 4,
+    "rust-client.rustupPath": "/home/enindu/.cargo/bin/rustup",
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.fontSize": 12,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Nord",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.tree.renderIndentGuides": "always"
 }

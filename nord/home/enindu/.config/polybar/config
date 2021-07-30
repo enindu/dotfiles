@@ -193,7 +193,7 @@ label-muted-padding    = 2
 type = internal/network
 
 ; Interface
-interface = enp2s0
+interface = wlp3s0
 
 ; Connected label
 label-connected            = Download: %downspeed%
