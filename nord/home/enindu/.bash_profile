@@ -20,3 +20,6 @@ export GOPATH="$HOME/.go"
 
 # Set Rust configurations
 . "$HOME/.cargo/env"
+
+# Set Symfony configurations
+complete -C "/usr/bin/symfony self:autocomplete" symfony
