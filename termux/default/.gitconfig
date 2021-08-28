@@ -1,0 +1,7 @@
+[user]
+	email = enindu@gmail.com
+	name = Enindu Alahapperuma
+[init]
+	defaultBranch = master
+[credential "https://github.com"]
+	helper = !/data/data/com.termux/files/usr/bin/gh auth git-credential

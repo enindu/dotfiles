@@ -1,0 +1,7 @@
+git_protocol: https
+editor: nano
+prompt: enabled
+pager: less
+aliases:
+http_unix_socket:
+browser:
