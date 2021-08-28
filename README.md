@@ -62,4 +62,4 @@ My personal configuration files
 - Riced applications: [CAVA](https://github.com/karlstav/cava), [cmus](https://cmus.github.io), [htop](https://hisham.hm/htop), [Kitty](https://github.com/kovidgoyal/kitty), [nano](https://www.nano-editor.org), [neofetch](https://github.com/dylanaraps/neofetch), [Polybar](https://github.com/polybar/polybar), [Ranger](https://github.com/ranger/ranger), [Rofi](https://github.com/davatorium/rofi), [Vim](https://www.vim.org) and [VS Code](https://code.visualstudio.com)
 
 ## Termux
-You can also find Termux configuration files on Android, under `termux` directory. I'm no longer doing Termux, by the way.
+You can also find Termux configuration files on Android, under `termux` directory.
