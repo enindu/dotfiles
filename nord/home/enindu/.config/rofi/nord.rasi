@@ -1,131 +1,44 @@
-configuration {
-  display-drun:   "Activate";
-  display-run:    "Execute";
-  display-window: "Window";
-  show-icons:     false;
-  sidebar-mode:   true;
-}
-
 * {
-  background-color:  #232831;
-  text-color:        #D8DEE9;
-  text-color-invert: #4C566A;
-  selbg:             #8FBCBB;
-  actbg:             #3B4252;
-  urgbg:             #BF616A;
-  winbg:             @text-color;
-
-  selected-normal-foreground: @winbg;
-  normal-foreground:          @text-color;
-  selected-normal-background: @actbg;
-  normal-background:          @background-color;
-
-  selected-urgent-foreground: @background-color;
-  urgent-foreground:          @text-color;
-  selected-urgent-background: @urgbg;
-  urgent-background:          @background-color;
-
-  selected-active-foreground: @winbg;
-  active-foreground:          @text-color;
-  selected-active-background: @actbg;
-  active-background:          @selbg;
-
-  line-margin:     0;
-  line-padding:    0;
-  separator-style: "none";
-  hide-scrollbar:  "true";
-  margin:          0;
-  padding:         0;
+  background-color:          #232831;
+  highlight:                 None;
+  selected-background-color: #3B4252;
+  text-color:                #D8DEE9;
 }
 
 window {
-  location:    west;
   anchor:      west;
-  height:      100%;
-  width:       15%;
-  orientation: horizontal;
   children:    [mainbox];
+  height:      100%;
+  location:    west;
+  orientation: horizontal;
+  width:       15%;
 }
 
 mainbox {
-  spacing:  0.5em;
-  children: [entry,listview,mode-switcher];
-}
-
-button {
-  padding: 5px 2px;
-}
-
-button selected {
-  background-color: @active-background;
-  text-color:       @text-color-invert;
+  children: [inputbar, listview];
 }
 
 inputbar {
-  padding: 5px;
-  spacing: 5px;
-}
-
-listview {
-  spacing: 0.5em;
-  dynamic: false;
-  cycle:   false;
-}
-
-element {
-  padding: 8px 5px;
+  children: [entry];
 }
 
 entry {
-  expand:         false;
-  text-color:     @normal-foreground;
-  vertical-align: 1;
-  padding:        5px;
+  padding: 10px;
 }
 
-element normal.normal {
-  background-color: @normal-background;
-  text-color:       @normal-foreground;
+listview {
+  children: [element];
 }
 
-element normal.urgent {
-  background-color: @urgent-background;
-  text-color:       @urgent-foreground;
+element {
+  children: [element-text];
+  padding:  10px;
 }
 
-element normal.active {
-  background-color: @active-background;
-  text-color:       @active-foreground;
+element selected {
+  background-color: @selected-background-color;
 }
 
-element selected.normal {
-  background-color: @selected-normal-background;
-  text-color:       @selected-normal-foreground;
-  border:           0 5px solid 0 0;
-  border-color:     @active-background;
-}
-
-element selected.urgent {
-  background-color: @selected-urgent-background;
-  text-color:       @selected-urgent-foreground;
-}
-
-element selected.active {
-  background-color: @selected-active-background;
-  text-color:       @selected-active-foreground;
-}
-
-element alternate.normal {
-  background-color: @normal-background;
-  text-color:       @normal-foreground;
-}
-
-element alternate.urgent {
-  background-color: @urgent-background;
-  text-color:       @urgent-foreground;
-}
-
-element alternate.active {
-  background-color: @active-background;
-  text-color:       @active-foreground;
+element-text selected {
+  background-color: @selected-background-color;
 }
