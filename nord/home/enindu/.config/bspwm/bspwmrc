@@ -21,7 +21,7 @@ feh --bg-fill /home/enindu/Pictures/Picture\ 9.jpg &
 # ==========
 # Workspaces
 # ==========
-bspc monitor -d Main Code Web Graphic Media Game
+bspc monitor -d Main Code Web Graphic Message Media
 
 # =====
 # Tiled
