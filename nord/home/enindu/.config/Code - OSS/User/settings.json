@@ -19,7 +19,6 @@
     "editor.fontFamily": "monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 12,
-    "editor.inlineHints.fontFamily": "monospace",
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.tabSize": 4,
@@ -38,15 +37,17 @@
     "liveSassCompile.settings.forceBaseDirectory": "/scss",
     "liveSassCompile.settings.formats": [
         {
-            "format": "compressed",
             "extensionName": ".css",
+            "format": "compressed",
             "savePath": "/css",
-            "savePathSegmentKeys": null,
-            "savePathReplaceSegmentsWith": null
+            "savePathReplaceSegmentsWith": null,
+            "savePathSegmentKeys": null
         }
     ],
     "markdown.preview.fontFamily": "monospace",
     "markdown.preview.fontSize": 12,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
     "php.suggest.basic": false,
     "php.validate.enable": false,
     "prettier.printWidth": 180,
